@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
-  <script src="app.js"></script>
+  <script src="index.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
@@ -30,15 +30,15 @@
     </div>
     <div id="form" class="tab-pane fade">
     <div class="container">
-        
+      
         <form name="form1">
           <div class="form-group" id="namediv">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" onchange="validateName()" placeholder="Enter name" name="name" >
+            <input type="text" class="form-control" id="name" oninput="validateName()" placeholder="Enter name" name="name" >
           </div>
           <div class="form-group" id="agediv">
             <label for="age">Age:</label>
-            <input type="number" class="form-control" id="age" onchange="validateAge()" placeholder="Enter Age" name="age" >
+            <input type="number" class="form-control" id="age" oninput="validateAge()"  placeholder="Enter Age" name="age" >
           </div>
           <div class="form-group">
             <label for="gender">Select your Gender</label><br>
